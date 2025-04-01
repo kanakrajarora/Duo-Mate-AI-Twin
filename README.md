@@ -35,11 +35,11 @@
 ## 🛠️ Tech Stack
 
 - **Frontend**: React.js / HTML / CSS / Tailwind  
-- **Backend**: Python  
+- **Backend**: Python, Node.js, Express.js  
 - **NLP**: LoRA, Hugging Face Transformers  
 - **AI Models**: Fine-tuned LLMs-Gemini and gemma-2b-it
 - **Email Integration**: Gmail API / IMAP   
-- **Database**: MongoDB  
+- **Database**: MongoDB, Mongoose ORM
 - **Authentication**: OAuth 2.0 (Google)    
 
 ---
@@ -49,5 +49,13 @@
 ```bash
 git clone https://github.com/kanakrajarora/Duo-Mate-AI-Twin.git
 cd duomate
-pip install -r requirements.txt
+#install backend requirements
+cd backend
+npm install
+cd src
+node server.js  #server is up & db connected
+# connecting to the frontend
+cd .. && cd ..
+cd duomate-ai-synth
+npm install
 npm run dev
